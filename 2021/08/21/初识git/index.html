@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git上传代码到github, 韩少君">
+    <meta name="keywords" content="韩少君">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>git上传代码到github | 韩少君</title>
+    <title>韩少君</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git上传代码到github</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -429,13 +429,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">教程</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -447,21 +443,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-03-09
+                    2021-08-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-04-20
+                    2021-08-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    48
+                    468
                 </div>
                 
 
@@ -493,11 +489,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本教程不详细细说明git的功能，只针对上传代码到github，其他命令参考<a target="_blank" rel="noopener" href="https://git-scm.com/docs">官网</a></p>
+                <hr>
+<p>title:git学习笔记1<br>tag:笔记<br>date:2021-8-28</p>
 <hr>
-<h2 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h2><p>官方<a target="_blank" rel="noopener" href="https://git-scm.com/">下载</a> ，点击下载win10版</p>
-<p><img src="https://img-blog.csdnimg.cn/20210312201916889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ5ODEyMTE2,size_16,color_FFFFFF,t_70#pic_center" alt="下载网址"></p>
-<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2>
+<p>本笔记是在自学过程中自我总结所得(有些是直接摘抄)</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本章记录git背景知识，不涉及任何代码命令，了解git的由来，git是什么，git基本工作原理</p>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><p>什么是“版本控制”？为什么要关心它呢？ 版本控制是一种记录一个或若干文件内容变化，以便将来查阅特 定版本修订情况的系统。这对于一个软件发开团队非常重要，有了它你就可以将选定的文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态，你可以比较文件的变化细节，查出最后是谁修改了哪个地方，从而找出导致怪异问题出现的原因，又是谁在何时报告了某个功能缺陷等等。使用版本控制系统通常还意味着，就算你乱来一气把整个项目中的文件改的改删的删，你也照样可以轻松恢复到原先的样子。但额外增加的工作量却微乎其微。</p>
+<h2 id="本地版本控制系统"><a href="#本地版本控制系统" class="headerlink" title="本地版本控制系统"></a>本地版本控制系统</h2><p>许多人习惯用复制整个项目目录加上自己能够区别的标识（备份时间，版本号等）方式来保存不同的版本。 这么做唯一的好处就是操作简单，但是特别容易犯错，有时候会混淆所在的工作目录，一不小心会写错文件或者覆盖意想外的文件。为了解决这个问题人们很久以前就开发了许多种本地版本控制系统，大多都是采用某种简单的数据库来记录文件的历次更新差异。</p>
+<p><img src="https://raw.githubusercontent.com/han-shao-jun/han-shao-jun-PicGo/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-08-28%20223312.png" alt="本地版本控制系统"></p>
+
                 
             </div>
             <hr/>
@@ -523,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://han-shao-jun.github.io/2021/03/09/git%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E5%88%B0github/">https://han-shao-jun.github.io/2021/03/09/git%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E5%88%B0github/</a>
+                    <a href="https://han-shao-jun.github.io/2021/08/21/%E5%88%9D%E8%AF%86git/">https://han-shao-jun.github.io/2021/08/21/%E5%88%9D%E8%AF%86git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -560,11 +561,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">教程</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -734,9 +731,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/08/21/%E5%88%9D%E8%AF%86git/">
                     <div class="card-image">
@@ -754,9 +752,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -765,6 +763,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -775,13 +774,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                <a href="/2021/03/09/git%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E5%88%B0github/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="git代理设置">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="git上传代码到github">
                         
-                        <span class="card-title">git代理设置</span>
+                        <span class="card-title">git上传代码到github</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -792,7 +791,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-09
                             </span>
                         <span class="publish-author">
                             
