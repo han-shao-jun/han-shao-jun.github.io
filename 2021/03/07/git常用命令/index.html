@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git代理设置, 韩少君">
+    <meta name="keywords" content="git常用命令, 韩少君">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>git代理设置 | 韩少君</title>
+    <title>git常用命令 | 韩少君</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git代理设置</h1>
+                    <h1 class="description center-align post-title">git常用命令</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">教程</span>
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
                             </a>
                         
                     </div>
@@ -454,14 +454,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-06-01
+                    2021-08-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    453
+                    235
                 </div>
                 
 
@@ -493,22 +493,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、git设置github账号信息："><a href="#一、git设置github账号信息：" class="headerlink" title="一、git设置github账号信息："></a>一、git设置github账号信息：</h1><h2 id="1-安装配置工具config"><a href="#1-安装配置工具config" class="headerlink" title="1.安装配置工具config"></a>1.安装配置工具config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install config -g \<span class="comment">#全局安装</span></span><br></pre></td></tr></table></figure>
+                <p>本笔记是在自学过程中自我总结所得(有些是直接摘抄)</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本章记录git基本命令的使用，完成一个本地仓库管理，所有命令均在<strong>命令行</strong>中执行</p>
+</blockquote>
+<h2 id="在已存在项目的目录完成本地版本跟踪"><a href="#在已存在项目的目录完成本地版本跟踪" class="headerlink" title="在已存在项目的目录完成本地版本跟踪"></a>在已存在项目的目录完成本地版本跟踪</h2><p>如果你有一个尚未进行版本控制的项目目录，想要用 Git 来控制它，那么首先需要进入该项目目录中。在项目的根目录下执行以下命令完成一个本地项目版本跟踪</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化本地仓库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 跟踪工作目录下所有c文件并提交到暂存区</span></span><br><span class="line">$ git add *.c</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将暂存区文件提交到本地仓库，并添加提交日志：initial project version</span></span><br><span class="line">$ git commit -m <span class="string">&#x27;initial project version&#x27;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="2-上传用户信息"><a href="#2-上传用户信息" class="headerlink" title="2.上传用户信息"></a>2.上传用户信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;GitHub登陆名&quot;</span>		<span class="comment">#账号名字</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;GitHub注册邮箱&quot;</span>	<span class="comment">#账号邮箱</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-查看用户信息"><a href="#3-查看用户信息" class="headerlink" title="3.查看用户信息"></a>3.查看用户信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config user.name 	<span class="comment">#查看用户名</span></span><br><span class="line">$ git config user.email	<span class="comment">#查看用户邮箱</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="二、git代理"><a href="#二、git代理" class="headerlink" title="二、git代理"></a>二、git代理</h1><h2 id="1-安装配置工具config-1"><a href="#1-安装配置工具config-1" class="headerlink" title="1.安装配置工具config"></a>1.安装配置工具config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install config -g \<span class="comment">#全局安装</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-设置代理"><a href="#2-设置代理" class="headerlink" title="2.设置代理"></a>2.设置代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy <span class="string">&#x27;socks5://127.0.0.1:1080&#x27;</span>	<span class="comment">#socks代理设置，地址127.0.0.1  端口1080</span></span><br><span class="line">$ git config --global https.proxy <span class="string">&#x27;socks5://127.0.0.1:1080&#x27;</span>	<span class="comment">#socks代理代理设置，地址127.0.0.1  端口1080</span></span><br><span class="line">$ git config --global https.proxy http://127.0.0.1:8080		<span class="comment">#http代理设置，地址127.0.0.1  端口1080</span></span><br><span class="line">$ git config --global https.proxy https://127.0.0.1:8080	<span class="comment">#http时代理设置，地址127.0.0.1  端口1080</span></span><br><span class="line"><span class="comment"># 代理地址和端口填自己的即可，这里只是做一个示范，（代理地址和端口自行查询）</span></span><br><span class="line"><span class="comment"># 可以用以下命令查看设置是否成功</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-查看代理服务器"><a href="#3-查看代理服务器" class="headerlink" title="3.查看代理服务器"></a>3.查看代理服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --get http.proxy \<span class="comment">#输出socks代理代理服务器</span></span><br><span class="line">$ git config --global --get https.proxy \<span class="comment">#输出socks代理代理服务器</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-取消代理"><a href="#4-取消代理" class="headerlink" title="4.取消代理"></a>4.取消代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">$ git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>
-
-<h1 id="三、npm-相关安装"><a href="#三、npm-相关安装" class="headerlink" title="三、npm 相关安装"></a>三、npm 相关安装</h1><h2 id="1-全局安装"><a href="#1-全局安装" class="headerlink" title="1.全局安装"></a>1.全局安装</h2><p>​    会将被安装的应用代码模块安装到全局环境（NODE_PATH系统的环境变量目录下），适用于跨文件夹项目使用应用工具，同一部电脑的任何目录都可以使用</p>
-<h2 id="2-局部安装"><a href="#2-局部安装" class="headerlink" title="2.局部安装"></a>2.局部安装</h2><p>​    会将被安装的应用代码模块安装当前的文件（即执行git命令的目录下），只能在当前的目录下应用被安装的应用模块</p>
+<p>以上命令建立在git版本控制三种工作区概念上，在初识git中已经提到</p>
 
                 
             </div>
@@ -573,8 +566,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">教程</span>
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
                                 </a>
                             
                         </div>
@@ -799,9 +792,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="git代理设置">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="git常用命令">
                         
-                        <span class="card-title">git代理设置</span>
+                        <span class="card-title">git常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -826,8 +819,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">教程</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -1030,7 +1023,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.7k</span>&nbsp;字
+                class="white-color">1.5k</span>&nbsp;字
             
             
             
